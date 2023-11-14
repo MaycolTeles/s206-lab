@@ -1,0 +1,24 @@
+{
+  "name": "exercicio_4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npm run cypress:run",
+    "test:report": "npm run cypress:run --reporter mochawesome --reporter-options reportDir=cypress/reports,overwrite=true,html=false,json=true",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/mochareports.json",
+    "report:generate": "marge cypress/reports/mochareports.json --reportDir cypress/reports"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.0",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
