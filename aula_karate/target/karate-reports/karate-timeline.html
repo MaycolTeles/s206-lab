@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"aula_inatel\/pokemon\/pokemon[1:6]","start":1700527573434,"end":1700527574784,"title":"aula_inatel\/pokemon\/pokemon[1:6] 21:46:13.434-21:46:14.784 Testando retorno 200 para pikachu"},{"id":2,"group":1,"content":"aula_inatel\/pokemon\/pokemon[2:12]","start":1700527574789,"end":1700527574896,"title":"aula_inatel\/pokemon\/pokemon[2:12] 21:46:14.789-21:46:14.896 Testando retorno 200 para pikachu e verificando o JSON"},{"id":3,"group":1,"content":"aula_inatel\/pokemon\/pokemon[3:20]","start":1700527574900,"end":1700527575145,"title":"aula_inatel\/pokemon\/pokemon[3:20] 21:46:14.900-21:46:15.145 Testando retorno 200 para pokemon red e entrando no array de idiomas do JSON"},{"id":4,"group":1,"content":"aula_inatel\/pokemon\/pokemon[4:33]","start":1700527575149,"end":1700527576810,"title":"aula_inatel\/pokemon\/pokemon[4:33] 21:46:15.149-21:46:16.810 Testando retorno 200 para hitmonlee e verificando o JSON"},{"id":5,"group":1,"content":"aula_inatel\/pokemon\/pokemon[5:42]","start":1700527576814,"end":1700527578330,"title":"aula_inatel\/pokemon\/pokemon[5:42] 21:46:16.814-21:46:18.330 Testando retorno 200 para charizard e verificando o JSON"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
