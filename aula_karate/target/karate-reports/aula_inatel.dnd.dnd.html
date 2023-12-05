@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>aula_inatel.dnd.dnd</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-12-04 10:37:11 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Testando retorno 200 em spells</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>Testando retorno 200 para classes</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:20]"><span>[3:20]</span> <span>Testando retorno 200 para raças</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:27]"><span>[4:27]</span> <span>Testando retorno 404 para classe inexistente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:33]"><span>[5:33]</span> <span>Testando retorno 404 para raça inexistente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:39]"><span>[6:39]</span> <span>Testando retorno 404 para spell inexistente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">aula_inatel/dnd/dnd.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API DnD</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Testando retorno 200 em spells</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>858</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://www.dnd5eapi.co/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:08.593 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/spells&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">849</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">22:37:08.670 request:
+1 &gt; GET https://www.dnd5eapi.co/api/spells
+1 &gt; Host: www.dnd5eapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:09.453 response time in milliseconds: 761
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701740229&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=%2BWvg7WApKGvG932QJjzDZXnJJC%2BK1kDpv8TXmX1TWF4%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701740229&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=%2BWvg7WApKGvG932QJjzDZXnJJC%2BK1kDpv8TXmX1TWF4%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Ratelimit-Limit: 10000
+1 &lt; X-Ratelimit-Remaining: 9999
+1 &lt; Date: Tue, 05 Dec 2023 01:37:09 GMT
+1 &lt; X-Ratelimit-Reset: 1701740231
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 25677
+1 &lt; Etag: W/&quot;644d-tPU23t4rxGbmFY7MNR945HV2OHA&quot;
+1 &lt; Via: 1.1 vegur
+{&quot;count&quot;:319,&quot;results&quot;:[{&quot;name&quot;:&quot;Acid Arrow&quot;,&quot;index&quot;:&quot;acid-arrow&quot;,&quot;url&quot;:&quot;\/api\/spells\/acid-arrow&quot;},{&quot;name&quot;:&quot;Acid Splash&quot;,&quot;index&quot;:&quot;acid-splash&quot;,&quot;url&quot;:&quot;\/api\/spells\/acid-splash&quot;},{&quot;name&quot;:&quot;Aid&quot;,&quot;index&quot;:&quot;aid&quot;,&quot;url&quot;:&quot;\/api\/spells\/aid&quot;},{&quot;name&quot;:&quot;Alarm&quot;,&quot;index&quot;:&quot;alarm&quot;,&quot;url&quot;:&quot;\/api\/spells\/alarm&quot;},{&quot;name&quot;:&quot;Alter Self&quot;,&quot;index&quot;:&quot;alter-self&quot;,&quot;url&quot;:&quot;\/api\/spells\/alter-self&quot;},{&quot;name&quot;:&quot;Animal Friendship&quot;,&quot;index&quot;:&quot;animal-friendship&quot;,&quot;url&quot;:&quot;\/api\/spells\/animal-friendship&quot;},{&quot;name&quot;:&quot;Animal Messenger&quot;,&quot;index&quot;:&quot;animal-messenger&quot;,&quot;url&quot;:&quot;\/api\/spells\/animal-messenger&quot;},{&quot;name&quot;:&quot;Animal Shapes&quot;,&quot;index&quot;:&quot;animal-shapes&quot;,&quot;url&quot;:&quot;\/api\/spells\/animal-shapes&quot;},{&quot;name&quot;:&quot;Animate Dead&quot;,&quot;index&quot;:&quot;animate-dead&quot;,&quot;url&quot;:&quot;\/api\/spells\/animate-dead&quot;},{&quot;name&quot;:&quot;Animate Objects&quot;,&quot;index&quot;:&quot;animate-objects&quot;,&quot;url&quot;:&quot;\/api\/spells\/animate-objects&quot;},{&quot;name&quot;:&quot;Antilife Shell&quot;,&quot;index&quot;:&quot;antilife-shell&quot;,&quot;url&quot;:&quot;\/api\/spells\/antilife-shell&quot;},{&quot;name&quot;:&quot;Antimagic Field&quot;,&quot;index&quot;:&quot;antimagic-field&quot;,&quot;url&quot;:&quot;\/api\/spells\/antimagic-field&quot;},{&quot;name&quot;:&quot;Antipathy\/Sympathy&quot;,&quot;index&quot;:&quot;antipathy-sympathy&quot;,&quot;url&quot;:&quot;\/api\/spells\/antipathy-sympathy&quot;},{&quot;name&quot;:&quot;Arcane Eye&quot;,&quot;index&quot;:&quot;arcane-eye&quot;,&quot;url&quot;:&quot;\/api\/spells\/arcane-eye&quot;},{&quot;name&quot;:&quot;Arcane Hand&quot;,&quot;index&quot;:&quot;arcane-hand&quot;,&quot;url&quot;:&quot;\/api\/spells\/arcane-hand&quot;},{&quot;name&quot;:&quot;Arcane Lock&quot;,&quot;index&quot;:&quot;arcane-lock&quot;,&quot;url&quot;:&quot;\/api\/spells\/arcane-lock&quot;},{&quot;name&quot;:&quot;Arcane Sword&quot;,&quot;index&quot;:&quot;arcane-sword&quot;,&quot;url&quot;:&quot;\/api\/spells\/arcane-sword&quot;},{&quot;name&quot;:&quot;Arcanist&#39;s Magic Aura&quot;,&quot;index&quot;:&quot;arcanists-magic-aura&quot;,&quot;url&quot;:&quot;\/api\/spells\/arcanists-magic-aura&quot;},{&quot;name&quot;:&quot;Astral Projection&quot;,&quot;index&quot;:&quot;astral-projection&quot;,&quot;url&quot;:&quot;\/api\/spells\/astral-projection&quot;},{&quot;name&quot;:&quot;Augury&quot;,&quot;index&quot;:&quot;augury&quot;,&quot;url&quot;:&quot;\/api\/spells\/augury&quot;},{&quot;name&quot;:&quot;Awaken&quot;,&quot;index&quot;:&quot;awaken&quot;,&quot;url&quot;:&quot;\/api\/spells\/awaken&quot;},{&quot;name&quot;:&quot;Bane&quot;,&quot;index&quot;:&quot;bane&quot;,&quot;url&quot;:&quot;\/api\/spells\/bane&quot;},{&quot;name&quot;:&quot;Banishment&quot;,&quot;index&quot;:&quot;banishment&quot;,&quot;url&quot;:&quot;\/api\/spells\/banishment&quot;},{&quot;name&quot;:&quot;Barkskin&quot;,&quot;index&quot;:&quot;barkskin&quot;,&quot;url&quot;:&quot;\/api\/spells\/barkskin&quot;},{&quot;name&quot;:&quot;Beacon of Hope&quot;,&quot;index&quot;:&quot;beacon-of-hope&quot;,&quot;url&quot;:&quot;\/api\/spells\/beacon-of-hope&quot;},{&quot;name&quot;:&quot;Bestow Curse&quot;,&quot;index&quot;:&quot;bestow-curse&quot;,&quot;url&quot;:&quot;\/api\/spells\/bestow-curse&quot;},{&quot;name&quot;:&quot;Black Tentacles&quot;,&quot;index&quot;:&quot;black-tentacles&quot;,&quot;url&quot;:&quot;\/api\/spells\/black-tentacles&quot;},{&quot;name&quot;:&quot;Blade Barrier&quot;,&quot;index&quot;:&quot;blade-barrier&quot;,&quot;url&quot;:&quot;\/api\/spells\/blade-barrier&quot;},{&quot;name&quot;:&quot;Bless&quot;,&quot;index&quot;:&quot;bless&quot;,&quot;url&quot;:&quot;\/api\/spells\/bless&quot;},{&quot;name&quot;:&quot;Blight&quot;,&quot;index&quot;:&quot;blight&quot;,&quot;url&quot;:&quot;\/api\/spells\/blight&quot;},{&quot;name&quot;:&quot;Blindness\/Deafness&quot;,&quot;index&quot;:&quot;blindness-deafness&quot;,&quot;url&quot;:&quot;\/api\/spells\/blindness-deafness&quot;},{&quot;name&quot;:&quot;Blink&quot;,&quot;index&quot;:&quot;blink&quot;,&quot;url&quot;:&quot;\/api\/spells\/blink&quot;},{&quot;name&quot;:&quot;Blur&quot;,&quot;index&quot;:&quot;blur&quot;,&quot;url&quot;:&quot;\/api\/spells\/blur&quot;},{&quot;name&quot;:&quot;Branding Smite&quot;,&quot;index&quot;:&quot;branding-smite&quot;,&quot;url&quot;:&quot;\/api\/spells\/branding-smite&quot;},{&quot;name&quot;:&quot;Burning Hands&quot;,&quot;index&quot;:&quot;burning-hands&quot;,&quot;url&quot;:&quot;\/api\/spells\/burning-hands&quot;},{&quot;name&quot;:&quot;Call Lightning&quot;,&quot;index&quot;:&quot;call-lightning&quot;,&quot;url&quot;:&quot;\/api\/spells\/call-lightning&quot;},{&quot;name&quot;:&quot;Calm Emotions&quot;,&quot;index&quot;:&quot;calm-emotions&quot;,&quot;url&quot;:&quot;\/api\/spells\/calm-emotions&quot;},{&quot;name&quot;:&quot;Chain Lightning&quot;,&quot;index&quot;:&quot;chain-lightning&quot;,&quot;url&quot;:&quot;\/api\/spells\/chain-lightning&quot;},{&quot;name&quot;:&quot;Charm Person&quot;,&quot;index&quot;:&quot;charm-person&quot;,&quot;url&quot;:&quot;\/api\/spells\/charm-person&quot;},{&quot;name&quot;:&quot;Chill Touch&quot;,&quot;index&quot;:&quot;chill-touch&quot;,&quot;url&quot;:&quot;\/api\/spells\/chill-touch&quot;},{&quot;name&quot;:&quot;Circle of Death&quot;,&quot;index&quot;:&quot;circle-of-death&quot;,&quot;url&quot;:&quot;\/api\/spells\/circle-of-death&quot;},{&quot;name&quot;:&quot;Clairvoyance&quot;,&quot;index&quot;:&quot;clairvoyance&quot;,&quot;url&quot;:&quot;\/api\/spells\/clairvoyance&quot;},{&quot;name&quot;:&quot;Clone&quot;,&quot;index&quot;:&quot;clone&quot;,&quot;url&quot;:&quot;\/api\/spells\/clone&quot;},{&quot;name&quot;:&quot;Cloudkill&quot;,&quot;index&quot;:&quot;cloudkill&quot;,&quot;url&quot;:&quot;\/api\/spells\/cloudkill&quot;},{&quot;name&quot;:&quot;Color Spray&quot;,&quot;index&quot;:&quot;color-spray&quot;,&quot;url&quot;:&quot;\/api\/spells\/color-spray&quot;},{&quot;name&quot;:&quot;Command&quot;,&quot;index&quot;:&quot;command&quot;,&quot;url&quot;:&quot;\/api\/spells\/command&quot;},{&quot;name&quot;:&quot;Commune&quot;,&quot;index&quot;:&quot;commune&quot;,&quot;url&quot;:&quot;\/api\/spells\/commune&quot;},{&quot;name&quot;:&quot;Commune With Nature&quot;,&quot;index&quot;:&quot;commune-with-nature&quot;,&quot;url&quot;:&quot;\/api\/spells\/commune-with-nature&quot;},{&quot;name&quot;:&quot;Comprehend Languages&quot;,&quot;index&quot;:&quot;comprehend-languages&quot;,&quot;url&quot;:&quot;\/api\/spells\/comprehend-languages&quot;},{&quot;name&quot;:&quot;Compulsion&quot;,&quot;index&quot;:&quot;compulsion&quot;,&quot;url&quot;:&quot;\/api\/spells\/compulsion&quot;},{&quot;name&quot;:&quot;Cone of Cold&quot;,&quot;index&quot;:&quot;cone-of-cold&quot;,&quot;url&quot;:&quot;\/api\/spells\/cone-of-cold&quot;},{&quot;name&quot;:&quot;Confusion&quot;,&quot;index&quot;:&quot;confusion&quot;,&quot;url&quot;:&quot;\/api\/spells\/confusion&quot;},{&quot;name&quot;:&quot;Conjure Animals&quot;,&quot;index&quot;:&quot;conjure-animals&quot;,&quot;url&quot;:&quot;\/api\/spells\/conjure-animals&quot;},{&quot;name&quot;:&quot;Conjure Celestial&quot;,&quot;index&quot;:&quot;conjure-celestial&quot;,&quot;url&quot;:&quot;\/api\/spells\/conjure-celestial&quot;},{&quot;name&quot;:&quot;Conjure Elemental&quot;,&quot;index&quot;:&quot;conjure-elemental&quot;,&quot;url&quot;:&quot;\/api\/spells\/conjure-elemental&quot;},{&quot;name&quot;:&quot;Conjure Fey&quot;,&quot;index&quot;:&quot;conjure-fey&quot;,&quot;url&quot;:&quot;\/api\/spells\/conjure-fey&quot;},{&quot;name&quot;:&quot;Conjure Minor Elementals&quot;,&quot;index&quot;:&quot;conjure-minor-elementals&quot;,&quot;url&quot;:&quot;\/api\/spells\/conjure-minor-elementals&quot;},{&quot;name&quot;:&quot;Conjure Woodland Beings&quot;,&quot;index&quot;:&quot;conjure-woodland-beings&quot;,&quot;url&quot;:&quot;\/api\/spells\/conjure-woodland-beings&quot;},{&quot;name&quot;:&quot;Contact Other Plane&quot;,&quot;index&quot;:&quot;contact-other-plane&quot;,&quot;url&quot;:&quot;\/api\/spells\/contact-other-plane&quot;},{&quot;name&quot;:&quot;Contagion&quot;,&quot;index&quot;:&quot;contagion&quot;,&quot;url&quot;:&quot;\/api\/spells\/contagion&quot;},{&quot;name&quot;:&quot;Contingency&quot;,&quot;index&quot;:&quot;contingency&quot;,&quot;url&quot;:&quot;\/api\/spells\/contingency&quot;},{&quot;name&quot;:&quot;Continual Flame&quot;,&quot;index&quot;:&quot;continual-flame&quot;,&quot;url&quot;:&quot;\/api\/spells\/continual-flame&quot;},{&quot;name&quot;:&quot;Control Water&quot;,&quot;index&quot;:&quot;control-water&quot;,&quot;url&quot;:&quot;\/api\/spells\/control-water&quot;},{&quot;name&quot;:&quot;Control Weather&quot;,&quot;index&quot;:&quot;control-weather&quot;,&quot;url&quot;:&quot;\/api\/spells\/control-weather&quot;},{&quot;name&quot;:&quot;Counterspell&quot;,&quot;index&quot;:&quot;counterspell&quot;,&quot;url&quot;:&quot;\/api\/spells\/counterspell&quot;},{&quot;name&quot;:&quot;Create Food and Water&quot;,&quot;index&quot;:&quot;create-food-and-water&quot;,&quot;url&quot;:&quot;\/api\/spells\/create-food-and-water&quot;},{&quot;name&quot;:&quot;Create or Destroy Water&quot;,&quot;index&quot;:&quot;create-or-destroy-water&quot;,&quot;url&quot;:&quot;\/api\/spells\/create-or-destroy-water&quot;},{&quot;name&quot;:&quot;Create Undead&quot;,&quot;index&quot;:&quot;create-undead&quot;,&quot;url&quot;:&quot;\/api\/spells\/create-undead&quot;},{&quot;name&quot;:&quot;Creation&quot;,&quot;index&quot;:&quot;creation&quot;,&quot;url&quot;:&quot;\/api\/spells\/creation&quot;},{&quot;name&quot;:&quot;Cure Wounds&quot;,&quot;index&quot;:&quot;cure-wounds&quot;,&quot;url&quot;:&quot;\/api\/spells\/cure-wounds&quot;},{&quot;name&quot;:&quot;Dancing Lights&quot;,&quot;index&quot;:&quot;dancing-lights&quot;,&quot;url&quot;:&quot;\/api\/spells\/dancing-lights&quot;},{&quot;name&quot;:&quot;Darkness&quot;,&quot;index&quot;:&quot;darkness&quot;,&quot;url&quot;:&quot;\/api\/spells\/darkness&quot;},{&quot;name&quot;:&quot;Darkvision&quot;,&quot;index&quot;:&quot;darkvision&quot;,&quot;url&quot;:&quot;\/api\/spells\/darkvision&quot;},{&quot;name&quot;:&quot;Daylight&quot;,&quot;index&quot;:&quot;daylight&quot;,&quot;url&quot;:&quot;\/api\/spells\/daylight&quot;},{&quot;name&quot;:&quot;Death Ward&quot;,&quot;index&quot;:&quot;death-ward&quot;,&quot;url&quot;:&quot;\/api\/spells\/death-ward&quot;},{&quot;name&quot;:&quot;Delayed Blast Fireball&quot;,&quot;index&quot;:&quot;delayed-blast-fireball&quot;,&quot;url&quot;:&quot;\/api\/spells\/delayed-blast-fireball&quot;},{&quot;name&quot;:&quot;Demiplane&quot;,&quot;index&quot;:&quot;demiplane&quot;,&quot;url&quot;:&quot;\/api\/spells\/demiplane&quot;},{&quot;name&quot;:&quot;Detect Evil and Good&quot;,&quot;index&quot;:&quot;detect-evil-and-good&quot;,&quot;url&quot;:&quot;\/api\/spells\/detect-evil-and-good&quot;},{&quot;name&quot;:&quot;Detect Magic&quot;,&quot;index&quot;:&quot;detect-magic&quot;,&quot;url&quot;:&quot;\/api\/spells\/detect-magic&quot;},{&quot;name&quot;:&quot;Detect Poison and Disease&quot;,&quot;index&quot;:&quot;detect-poison-and-disease&quot;,&quot;url&quot;:&quot;\/api\/spells\/detect-poison-and-disease&quot;},{&quot;name&quot;:&quot;Detect Thoughts&quot;,&quot;index&quot;:&quot;detect-thoughts&quot;,&quot;url&quot;:&quot;\/api\/spells\/detect-thoughts&quot;},{&quot;name&quot;:&quot;Dimension Door&quot;,&quot;index&quot;:&quot;dimension-door&quot;,&quot;url&quot;:&quot;\/api\/spells\/dimension-door&quot;},{&quot;name&quot;:&quot;Disguise Self&quot;,&quot;index&quot;:&quot;disguise-self&quot;,&quot;url&quot;:&quot;\/api\/spells\/disguise-self&quot;},{&quot;name&quot;:&quot;Disintegrate&quot;,&quot;index&quot;:&quot;disintegrate&quot;,&quot;url&quot;:&quot;\/api\/spells\/disintegrate&quot;},{&quot;name&quot;:&quot;Dispel Evil and Good&quot;,&quot;index&quot;:&quot;dispel-evil-and-good&quot;,&quot;url&quot;:&quot;\/api\/spells\/dispel-evil-and-good&quot;},{&quot;name&quot;:&quot;Dispel Magic&quot;,&quot;index&quot;:&quot;dispel-magic&quot;,&quot;url&quot;:&quot;\/api\/spells\/dispel-magic&quot;},{&quot;name&quot;:&quot;Divination&quot;,&quot;index&quot;:&quot;divination&quot;,&quot;url&quot;:&quot;\/api\/spells\/divination&quot;},{&quot;name&quot;:&quot;Divine Favor&quot;,&quot;index&quot;:&quot;divine-favor&quot;,&quot;url&quot;:&quot;\/api\/spells\/divine-favor&quot;},{&quot;name&quot;:&quot;Divine Word&quot;,&quot;index&quot;:&quot;divine-word&quot;,&quot;url&quot;:&quot;\/api\/spells\/divine-word&quot;},{&quot;name&quot;:&quot;Dominate Beast&quot;,&quot;index&quot;:&quot;dominate-beast&quot;,&quot;url&quot;:&quot;\/api\/spells\/dominate-beast&quot;},{&quot;name&quot;:&quot;Dominate Monster&quot;,&quot;index&quot;:&quot;dominate-monster&quot;,&quot;url&quot;:&quot;\/api\/spells\/dominate-monster&quot;},{&quot;name&quot;:&quot;Dominate Person&quot;,&quot;index&quot;:&quot;dominate-person&quot;,&quot;url&quot;:&quot;\/api\/spells\/dominate-person&quot;},{&quot;name&quot;:&quot;Dream&quot;,&quot;index&quot;:&quot;dream&quot;,&quot;url&quot;:&quot;\/api\/spells\/dream&quot;},{&quot;name&quot;:&quot;Druidcraft&quot;,&quot;index&quot;:&quot;druidcraft&quot;,&quot;url&quot;:&quot;\/api\/spells\/druidcraft&quot;},{&quot;name&quot;:&quot;Earthquake&quot;,&quot;index&quot;:&quot;earthquake&quot;,&quot;url&quot;:&quot;\/api\/spells\/earthquake&quot;},{&quot;name&quot;:&quot;Eldritch Blast&quot;,&quot;index&quot;:&quot;eldritch-blast&quot;,&quot;url&quot;:&quot;\/api\/spells\/eldritch-blast&quot;},{&quot;name&quot;:&quot;Enhance Ability&quot;,&quot;index&quot;:&quot;enhance-ability&quot;,&quot;url&quot;:&quot;\/api\/spells\/enhance-ability&quot;},{&quot;name&quot;:&quot;Enlarge\/Reduce&quot;,&quot;index&quot;:&quot;enlarge-reduce&quot;,&quot;url&quot;:&quot;\/api\/spells\/enlarge-reduce&quot;},{&quot;name&quot;:&quot;Entangle&quot;,&quot;index&quot;:&quot;entangle&quot;,&quot;url&quot;:&quot;\/api\/spells\/entangle&quot;},{&quot;name&quot;:&quot;Enthrall&quot;,&quot;index&quot;:&quot;enthrall&quot;,&quot;url&quot;:&quot;\/api\/spells\/enthrall&quot;},{&quot;name&quot;:&quot;Etherealness&quot;,&quot;index&quot;:&quot;etherealness&quot;,&quot;url&quot;:&quot;\/api\/spells\/etherealness&quot;},{&quot;name&quot;:&quot;Expeditious Retreat&quot;,&quot;index&quot;:&quot;expeditious-retreat&quot;,&quot;url&quot;:&quot;\/api\/spells\/expeditious-retreat&quot;},{&quot;name&quot;:&quot;Eyebite&quot;,&quot;index&quot;:&quot;eyebite&quot;,&quot;url&quot;:&quot;\/api\/spells\/eyebite&quot;},{&quot;name&quot;:&quot;Fabricate&quot;,&quot;index&quot;:&quot;fabricate&quot;,&quot;url&quot;:&quot;\/api\/spells\/fabricate&quot;},{&quot;name&quot;:&quot;Faerie Fire&quot;,&quot;index&quot;:&quot;faerie-fire&quot;,&quot;url&quot;:&quot;\/api\/spells\/faerie-fire&quot;},{&quot;name&quot;:&quot;Faithful Hound&quot;,&quot;index&quot;:&quot;faithful-hound&quot;,&quot;url&quot;:&quot;\/api\/spells\/faithful-hound&quot;},{&quot;name&quot;:&quot;False Life&quot;,&quot;index&quot;:&quot;false-life&quot;,&quot;url&quot;:&quot;\/api\/spells\/false-life&quot;},{&quot;name&quot;:&quot;Fear&quot;,&quot;index&quot;:&quot;fear&quot;,&quot;url&quot;:&quot;\/api\/spells\/fear&quot;},{&quot;name&quot;:&quot;Feather Fall&quot;,&quot;index&quot;:&quot;feather-fall&quot;,&quot;url&quot;:&quot;\/api\/spells\/feather-fall&quot;},{&quot;name&quot;:&quot;Feeblemind&quot;,&quot;index&quot;:&quot;feeblemind&quot;,&quot;url&quot;:&quot;\/api\/spells\/feeblemind&quot;},{&quot;name&quot;:&quot;Find Familiar&quot;,&quot;index&quot;:&quot;find-familiar&quot;,&quot;url&quot;:&quot;\/api\/spells\/find-familiar&quot;},{&quot;name&quot;:&quot;Find Steed&quot;,&quot;index&quot;:&quot;find-steed&quot;,&quot;url&quot;:&quot;\/api\/spells\/find-steed&quot;},{&quot;name&quot;:&quot;Find the Path&quot;,&quot;index&quot;:&quot;find-the-path&quot;,&quot;url&quot;:&quot;\/api\/spells\/find-the-path&quot;},{&quot;name&quot;:&quot;Find Traps&quot;,&quot;index&quot;:&quot;find-traps&quot;,&quot;url&quot;:&quot;\/api\/spells\/find-traps&quot;},{&quot;name&quot;:&quot;Finger of Death&quot;,&quot;index&quot;:&quot;finger-of-death&quot;,&quot;url&quot;:&quot;\/api\/spells\/finger-of-death&quot;},{&quot;name&quot;:&quot;Fire Bolt&quot;,&quot;index&quot;:&quot;fire-bolt&quot;,&quot;url&quot;:&quot;\/api\/spells\/fire-bolt&quot;},{&quot;name&quot;:&quot;Fire Shield&quot;,&quot;index&quot;:&quot;fire-shield&quot;,&quot;url&quot;:&quot;\/api\/spells\/fire-shield&quot;},{&quot;name&quot;:&quot;Fire Storm&quot;,&quot;index&quot;:&quot;fire-storm&quot;,&quot;url&quot;:&quot;\/api\/spells\/fire-storm&quot;},{&quot;name&quot;:&quot;Fireball&quot;,&quot;index&quot;:&quot;fireball&quot;,&quot;url&quot;:&quot;\/api\/spells\/fireball&quot;},{&quot;name&quot;:&quot;Flame Blade&quot;,&quot;index&quot;:&quot;flame-blade&quot;,&quot;url&quot;:&quot;\/api\/spells\/flame-blade&quot;},{&quot;name&quot;:&quot;Flame Strike&quot;,&quot;index&quot;:&quot;flame-strike&quot;,&quot;url&quot;:&quot;\/api\/spells\/flame-strike&quot;},{&quot;name&quot;:&quot;Flaming Sphere&quot;,&quot;index&quot;:&quot;flaming-sphere&quot;,&quot;url&quot;:&quot;\/api\/spells\/flaming-sphere&quot;},{&quot;name&quot;:&quot;Flesh to Stone&quot;,&quot;index&quot;:&quot;flesh-to-stone&quot;,&quot;url&quot;:&quot;\/api\/spells\/flesh-to-stone&quot;},{&quot;name&quot;:&quot;Floating Disk&quot;,&quot;index&quot;:&quot;floating-disk&quot;,&quot;url&quot;:&quot;\/api\/spells\/floating-disk&quot;},{&quot;name&quot;:&quot;Fly&quot;,&quot;index&quot;:&quot;fly&quot;,&quot;url&quot;:&quot;\/api\/spells\/fly&quot;},{&quot;name&quot;:&quot;Fog Cloud&quot;,&quot;index&quot;:&quot;fog-cloud&quot;,&quot;url&quot;:&quot;\/api\/spells\/fog-cloud&quot;},{&quot;name&quot;:&quot;Forbiddance&quot;,&quot;index&quot;:&quot;forbiddance&quot;,&quot;url&quot;:&quot;\/api\/spells\/forbiddance&quot;},{&quot;name&quot;:&quot;Forcecage&quot;,&quot;index&quot;:&quot;forcecage&quot;,&quot;url&quot;:&quot;\/api\/spells\/forcecage&quot;},{&quot;name&quot;:&quot;Foresight&quot;,&quot;index&quot;:&quot;foresight&quot;,&quot;url&quot;:&quot;\/api\/spells\/foresight&quot;},{&quot;name&quot;:&quot;Freedom of Movement&quot;,&quot;index&quot;:&quot;freedom-of-movement&quot;,&quot;url&quot;:&quot;\/api\/spells\/freedom-of-movement&quot;},{&quot;name&quot;:&quot;Freezing Sphere&quot;,&quot;index&quot;:&quot;freezing-sphere&quot;,&quot;url&quot;:&quot;\/api\/spells\/freezing-sphere&quot;},{&quot;name&quot;:&quot;Gaseous Form&quot;,&quot;index&quot;:&quot;gaseous-form&quot;,&quot;url&quot;:&quot;\/api\/spells\/gaseous-form&quot;},{&quot;name&quot;:&quot;Gate&quot;,&quot;index&quot;:&quot;gate&quot;,&quot;url&quot;:&quot;\/api\/spells\/gate&quot;},{&quot;name&quot;:&quot;Geas&quot;,&quot;index&quot;:&quot;geas&quot;,&quot;url&quot;:&quot;\/api\/spells\/geas&quot;},{&quot;name&quot;:&quot;Gentle Repose&quot;,&quot;index&quot;:&quot;gentle-repose&quot;,&quot;url&quot;:&quot;\/api\/spells\/gentle-repose&quot;},{&quot;name&quot;:&quot;Giant Insect&quot;,&quot;index&quot;:&quot;giant-insect&quot;,&quot;url&quot;:&quot;\/api\/spells\/giant-insect&quot;},{&quot;name&quot;:&quot;Glibness&quot;,&quot;index&quot;:&quot;glibness&quot;,&quot;url&quot;:&quot;\/api\/spells\/glibness&quot;},{&quot;name&quot;:&quot;Globe of Invulnerability&quot;,&quot;index&quot;:&quot;globe-of-invulnerability&quot;,&quot;url&quot;:&quot;\/api\/spells\/globe-of-invulnerability&quot;},{&quot;name&quot;:&quot;Glyph of Warding&quot;,&quot;index&quot;:&quot;glyph-of-warding&quot;,&quot;url&quot;:&quot;\/api\/spells\/glyph-of-warding&quot;},{&quot;name&quot;:&quot;Goodberry&quot;,&quot;index&quot;:&quot;goodberry&quot;,&quot;url&quot;:&quot;\/api\/spells\/goodberry&quot;},{&quot;name&quot;:&quot;Grease&quot;,&quot;index&quot;:&quot;grease&quot;,&quot;url&quot;:&quot;\/api\/spells\/grease&quot;},{&quot;name&quot;:&quot;Greater Invisibility&quot;,&quot;index&quot;:&quot;greater-invisibility&quot;,&quot;url&quot;:&quot;\/api\/spells\/greater-invisibility&quot;},{&quot;name&quot;:&quot;Greater Restoration&quot;,&quot;index&quot;:&quot;greater-restoration&quot;,&quot;url&quot;:&quot;\/api\/spells\/greater-restoration&quot;},{&quot;name&quot;:&quot;Guardian of Faith&quot;,&quot;index&quot;:&quot;guardian-of-faith&quot;,&quot;url&quot;:&quot;\/api\/spells\/guardian-of-faith&quot;},{&quot;name&quot;:&quot;Guards and Wards&quot;,&quot;index&quot;:&quot;guards-and-wards&quot;,&quot;url&quot;:&quot;\/api\/spells\/guards-and-wards&quot;},{&quot;name&quot;:&quot;Guidance&quot;,&quot;index&quot;:&quot;guidance&quot;,&quot;url&quot;:&quot;\/api\/spells\/guidance&quot;},{&quot;name&quot;:&quot;Guiding Bolt&quot;,&quot;index&quot;:&quot;guiding-bolt&quot;,&quot;url&quot;:&quot;\/api\/spells\/guiding-bolt&quot;},{&quot;name&quot;:&quot;Gust of Wind&quot;,&quot;index&quot;:&quot;gust-of-wind&quot;,&quot;url&quot;:&quot;\/api\/spells\/gust-of-wind&quot;},{&quot;name&quot;:&quot;Hallow&quot;,&quot;index&quot;:&quot;hallow&quot;,&quot;url&quot;:&quot;\/api\/spells\/hallow&quot;},{&quot;name&quot;:&quot;Hallucinatory Terrain&quot;,&quot;index&quot;:&quot;hallucinatory-terrain&quot;,&quot;url&quot;:&quot;\/api\/spells\/hallucinatory-terrain&quot;},{&quot;name&quot;:&quot;Harm&quot;,&quot;index&quot;:&quot;harm&quot;,&quot;url&quot;:&quot;\/api\/spells\/harm&quot;},{&quot;name&quot;:&quot;Haste&quot;,&quot;index&quot;:&quot;haste&quot;,&quot;url&quot;:&quot;\/api\/spells\/haste&quot;},{&quot;name&quot;:&quot;Heal&quot;,&quot;index&quot;:&quot;heal&quot;,&quot;url&quot;:&quot;\/api\/spells\/heal&quot;},{&quot;name&quot;:&quot;Healing Word&quot;,&quot;index&quot;:&quot;healing-word&quot;,&quot;url&quot;:&quot;\/api\/spells\/healing-word&quot;},{&quot;name&quot;:&quot;Heat Metal&quot;,&quot;index&quot;:&quot;heat-metal&quot;,&quot;url&quot;:&quot;\/api\/spells\/heat-metal&quot;},{&quot;name&quot;:&quot;Hellish Rebuke&quot;,&quot;index&quot;:&quot;hellish-rebuke&quot;,&quot;url&quot;:&quot;\/api\/spells\/hellish-rebuke&quot;},{&quot;name&quot;:&quot;Heroes&#39; Feast&quot;,&quot;index&quot;:&quot;heroes-feast&quot;,&quot;url&quot;:&quot;\/api\/spells\/heroes-feast&quot;},{&quot;name&quot;:&quot;Heroism&quot;,&quot;index&quot;:&quot;heroism&quot;,&quot;url&quot;:&quot;\/api\/spells\/heroism&quot;},{&quot;name&quot;:&quot;Hideous Laughter&quot;,&quot;index&quot;:&quot;hideous-laughter&quot;,&quot;url&quot;:&quot;\/api\/spells\/hideous-laughter&quot;},{&quot;name&quot;:&quot;Hold Monster&quot;,&quot;index&quot;:&quot;hold-monster&quot;,&quot;url&quot;:&quot;\/api\/spells\/hold-monster&quot;},{&quot;name&quot;:&quot;Hold Person&quot;,&quot;index&quot;:&quot;hold-person&quot;,&quot;url&quot;:&quot;\/api\/spells\/hold-person&quot;},{&quot;name&quot;:&quot;Holy Aura&quot;,&quot;index&quot;:&quot;holy-aura&quot;,&quot;url&quot;:&quot;\/api\/spells\/holy-aura&quot;},{&quot;name&quot;:&quot;Hunter&#39;s Mark&quot;,&quot;index&quot;:&quot;hunters-mark&quot;,&quot;url&quot;:&quot;\/api\/spells\/hunters-mark&quot;},{&quot;name&quot;:&quot;Hypnotic Pattern&quot;,&quot;index&quot;:&quot;hypnotic-pattern&quot;,&quot;url&quot;:&quot;\/api\/spells\/hypnotic-pattern&quot;},{&quot;name&quot;:&quot;Ice Storm&quot;,&quot;index&quot;:&quot;ice-storm&quot;,&quot;url&quot;:&quot;\/api\/spells\/ice-storm&quot;},{&quot;name&quot;:&quot;Identify&quot;,&quot;index&quot;:&quot;identify&quot;,&quot;url&quot;:&quot;\/api\/spells\/identify&quot;},{&quot;name&quot;:&quot;Illusory Script&quot;,&quot;index&quot;:&quot;illusory-script&quot;,&quot;url&quot;:&quot;\/api\/spells\/illusory-script&quot;},{&quot;name&quot;:&quot;Imprisonment&quot;,&quot;index&quot;:&quot;imprisonment&quot;,&quot;url&quot;:&quot;\/api\/spells\/imprisonment&quot;},{&quot;name&quot;:&quot;Incendiary Cloud&quot;,&quot;index&quot;:&quot;incendiary-cloud&quot;,&quot;url&quot;:&quot;\/api\/spells\/incendiary-cloud&quot;},{&quot;name&quot;:&quot;Inflict Wounds&quot;,&quot;index&quot;:&quot;inflict-wounds&quot;,&quot;url&quot;:&quot;\/api\/spells\/inflict-wounds&quot;},{&quot;name&quot;:&quot;Insect Plague&quot;,&quot;index&quot;:&quot;insect-plague&quot;,&quot;url&quot;:&quot;\/api\/spells\/insect-plague&quot;},{&quot;name&quot;:&quot;Instant Summons&quot;,&quot;index&quot;:&quot;instant-summons&quot;,&quot;url&quot;:&quot;\/api\/spells\/instant-summons&quot;},{&quot;name&quot;:&quot;Invisibility&quot;,&quot;index&quot;:&quot;invisibility&quot;,&quot;url&quot;:&quot;\/api\/spells\/invisibility&quot;},{&quot;name&quot;:&quot;Irresistible Dance&quot;,&quot;index&quot;:&quot;irresistible-dance&quot;,&quot;url&quot;:&quot;\/api\/spells\/irresistible-dance&quot;},{&quot;name&quot;:&quot;Jump&quot;,&quot;index&quot;:&quot;jump&quot;,&quot;url&quot;:&quot;\/api\/spells\/jump&quot;},{&quot;name&quot;:&quot;Knock&quot;,&quot;index&quot;:&quot;knock&quot;,&quot;url&quot;:&quot;\/api\/spells\/knock&quot;},{&quot;name&quot;:&quot;Legend Lore&quot;,&quot;index&quot;:&quot;legend-lore&quot;,&quot;url&quot;:&quot;\/api\/spells\/legend-lore&quot;},{&quot;name&quot;:&quot;Lesser Restoration&quot;,&quot;index&quot;:&quot;lesser-restoration&quot;,&quot;url&quot;:&quot;\/api\/spells\/lesser-restoration&quot;},{&quot;name&quot;:&quot;Levitate&quot;,&quot;index&quot;:&quot;levitate&quot;,&quot;url&quot;:&quot;\/api\/spells\/levitate&quot;},{&quot;name&quot;:&quot;Light&quot;,&quot;index&quot;:&quot;light&quot;,&quot;url&quot;:&quot;\/api\/spells\/light&quot;},{&quot;name&quot;:&quot;Lightning Bolt&quot;,&quot;index&quot;:&quot;lightning-bolt&quot;,&quot;url&quot;:&quot;\/api\/spells\/lightning-bolt&quot;},{&quot;name&quot;:&quot;Locate Animals or Plants&quot;,&quot;index&quot;:&quot;locate-animals-or-plants&quot;,&quot;url&quot;:&quot;\/api\/spells\/locate-animals-or-plants&quot;},{&quot;name&quot;:&quot;Locate Creature&quot;,&quot;index&quot;:&quot;locate-creature&quot;,&quot;url&quot;:&quot;\/api\/spells\/locate-creature&quot;},{&quot;name&quot;:&quot;Locate Object&quot;,&quot;index&quot;:&quot;locate-object&quot;,&quot;url&quot;:&quot;\/api\/spells\/locate-object&quot;},{&quot;name&quot;:&quot;Longstrider&quot;,&quot;index&quot;:&quot;longstrider&quot;,&quot;url&quot;:&quot;\/api\/spells\/longstrider&quot;},{&quot;name&quot;:&quot;Mage Armor&quot;,&quot;index&quot;:&quot;mage-armor&quot;,&quot;url&quot;:&quot;\/api\/spells\/mage-armor&quot;},{&quot;name&quot;:&quot;Mage Hand&quot;,&quot;index&quot;:&quot;mage-hand&quot;,&quot;url&quot;:&quot;\/api\/spells\/mage-hand&quot;},{&quot;name&quot;:&quot;Magic Circle&quot;,&quot;index&quot;:&quot;magic-circle&quot;,&quot;url&quot;:&quot;\/api\/spells\/magic-circle&quot;},{&quot;name&quot;:&quot;Magic Jar&quot;,&quot;index&quot;:&quot;magic-jar&quot;,&quot;url&quot;:&quot;\/api\/spells\/magic-jar&quot;},{&quot;name&quot;:&quot;Magic Missile&quot;,&quot;index&quot;:&quot;magic-missile&quot;,&quot;url&quot;:&quot;\/api\/spells\/magic-missile&quot;},{&quot;name&quot;:&quot;Magic Mouth&quot;,&quot;index&quot;:&quot;magic-mouth&quot;,&quot;url&quot;:&quot;\/api\/spells\/magic-mouth&quot;},{&quot;name&quot;:&quot;Magic Weapon&quot;,&quot;index&quot;:&quot;magic-weapon&quot;,&quot;url&quot;:&quot;\/api\/spells\/magic-weapon&quot;},{&quot;name&quot;:&quot;Magnificent Mansion&quot;,&quot;index&quot;:&quot;magnificent-mansion&quot;,&quot;url&quot;:&quot;\/api\/spells\/magnificent-mansion&quot;},{&quot;name&quot;:&quot;Major Image&quot;,&quot;index&quot;:&quot;major-image&quot;,&quot;url&quot;:&quot;\/api\/spells\/major-image&quot;},{&quot;name&quot;:&quot;Mass Cure Wounds&quot;,&quot;index&quot;:&quot;mass-cure-wounds&quot;,&quot;url&quot;:&quot;\/api\/spells\/mass-cure-wounds&quot;},{&quot;name&quot;:&quot;Mass Heal&quot;,&quot;index&quot;:&quot;mass-heal&quot;,&quot;url&quot;:&quot;\/api\/spells\/mass-heal&quot;},{&quot;name&quot;:&quot;Mass Healing Word&quot;,&quot;index&quot;:&quot;mass-healing-word&quot;,&quot;url&quot;:&quot;\/api\/spells\/mass-healing-word&quot;},{&quot;name&quot;:&quot;Mass Suggestion&quot;,&quot;index&quot;:&quot;mass-suggestion&quot;,&quot;url&quot;:&quot;\/api\/spells\/mass-suggestion&quot;},{&quot;name&quot;:&quot;Maze&quot;,&quot;index&quot;:&quot;maze&quot;,&quot;url&quot;:&quot;\/api\/spells\/maze&quot;},{&quot;name&quot;:&quot;Meld Into Stone&quot;,&quot;index&quot;:&quot;meld-into-stone&quot;,&quot;url&quot;:&quot;\/api\/spells\/meld-into-stone&quot;},{&quot;name&quot;:&quot;Mending&quot;,&quot;index&quot;:&quot;mending&quot;,&quot;url&quot;:&quot;\/api\/spells\/mending&quot;},{&quot;name&quot;:&quot;Message&quot;,&quot;index&quot;:&quot;message&quot;,&quot;url&quot;:&quot;\/api\/spells\/message&quot;},{&quot;name&quot;:&quot;Meteor Swarm&quot;,&quot;index&quot;:&quot;meteor-swarm&quot;,&quot;url&quot;:&quot;\/api\/spells\/meteor-swarm&quot;},{&quot;name&quot;:&quot;Mind Blank&quot;,&quot;index&quot;:&quot;mind-blank&quot;,&quot;url&quot;:&quot;\/api\/spells\/mind-blank&quot;},{&quot;name&quot;:&quot;Minor Illusion&quot;,&quot;index&quot;:&quot;minor-illusion&quot;,&quot;url&quot;:&quot;\/api\/spells\/minor-illusion&quot;},{&quot;name&quot;:&quot;Mirage Arcane&quot;,&quot;index&quot;:&quot;mirage-arcane&quot;,&quot;url&quot;:&quot;\/api\/spells\/mirage-arcane&quot;},{&quot;name&quot;:&quot;Mirror Image&quot;,&quot;index&quot;:&quot;mirror-image&quot;,&quot;url&quot;:&quot;\/api\/spells\/mirror-image&quot;},{&quot;name&quot;:&quot;Mislead&quot;,&quot;index&quot;:&quot;mislead&quot;,&quot;url&quot;:&quot;\/api\/spells\/mislead&quot;},{&quot;name&quot;:&quot;Misty Step&quot;,&quot;index&quot;:&quot;misty-step&quot;,&quot;url&quot;:&quot;\/api\/spells\/misty-step&quot;},{&quot;name&quot;:&quot;Modify Memory&quot;,&quot;index&quot;:&quot;modify-memory&quot;,&quot;url&quot;:&quot;\/api\/spells\/modify-memory&quot;},{&quot;name&quot;:&quot;Moonbeam&quot;,&quot;index&quot;:&quot;moonbeam&quot;,&quot;url&quot;:&quot;\/api\/spells\/moonbeam&quot;},{&quot;name&quot;:&quot;Move Earth&quot;,&quot;index&quot;:&quot;move-earth&quot;,&quot;url&quot;:&quot;\/api\/spells\/move-earth&quot;},{&quot;name&quot;:&quot;Nondetection&quot;,&quot;index&quot;:&quot;nondetection&quot;,&quot;url&quot;:&quot;\/api\/spells\/nondetection&quot;},{&quot;name&quot;:&quot;Pass Without Trace&quot;,&quot;index&quot;:&quot;pass-without-trace&quot;,&quot;url&quot;:&quot;\/api\/spells\/pass-without-trace&quot;},{&quot;name&quot;:&quot;Passwall&quot;,&quot;index&quot;:&quot;passwall&quot;,&quot;url&quot;:&quot;\/api\/spells\/passwall&quot;},{&quot;name&quot;:&quot;Phantasmal Killer&quot;,&quot;index&quot;:&quot;phantasmal-killer&quot;,&quot;url&quot;:&quot;\/api\/spells\/phantasmal-killer&quot;},{&quot;name&quot;:&quot;Phantom Steed&quot;,&quot;index&quot;:&quot;phantom-steed&quot;,&quot;url&quot;:&quot;\/api\/spells\/phantom-steed&quot;},{&quot;name&quot;:&quot;Planar Ally&quot;,&quot;index&quot;:&quot;planar-ally&quot;,&quot;url&quot;:&quot;\/api\/spells\/planar-ally&quot;},{&quot;name&quot;:&quot;Planar Binding&quot;,&quot;index&quot;:&quot;planar-binding&quot;,&quot;url&quot;:&quot;\/api\/spells\/planar-binding&quot;},{&quot;name&quot;:&quot;Plane Shift&quot;,&quot;index&quot;:&quot;plane-shift&quot;,&quot;url&quot;:&quot;\/api\/spells\/plane-shift&quot;},{&quot;name&quot;:&quot;Plant Growth&quot;,&quot;index&quot;:&quot;plant-growth&quot;,&quot;url&quot;:&quot;\/api\/spells\/plant-growth&quot;},{&quot;name&quot;:&quot;Poison Spray&quot;,&quot;index&quot;:&quot;poison-spray&quot;,&quot;url&quot;:&quot;\/api\/spells\/poison-spray&quot;},{&quot;name&quot;:&quot;Polymorph&quot;,&quot;index&quot;:&quot;polymorph&quot;,&quot;url&quot;:&quot;\/api\/spells\/polymorph&quot;},{&quot;name&quot;:&quot;Power Word Kill&quot;,&quot;index&quot;:&quot;power-word-kill&quot;,&quot;url&quot;:&quot;\/api\/spells\/power-word-kill&quot;},{&quot;name&quot;:&quot;Power Word Stun&quot;,&quot;index&quot;:&quot;power-word-stun&quot;,&quot;url&quot;:&quot;\/api\/spells\/power-word-stun&quot;},{&quot;name&quot;:&quot;Prayer of Healing&quot;,&quot;index&quot;:&quot;prayer-of-healing&quot;,&quot;url&quot;:&quot;\/api\/spells\/prayer-of-healing&quot;},{&quot;name&quot;:&quot;Prestidigitation&quot;,&quot;index&quot;:&quot;prestidigitation&quot;,&quot;url&quot;:&quot;\/api\/spells\/prestidigitation&quot;},{&quot;name&quot;:&quot;Prismatic Spray&quot;,&quot;index&quot;:&quot;prismatic-spray&quot;,&quot;url&quot;:&quot;\/api\/spells\/prismatic-spray&quot;},{&quot;name&quot;:&quot;Prismatic Wall&quot;,&quot;index&quot;:&quot;prismatic-wall&quot;,&quot;url&quot;:&quot;\/api\/spells\/prismatic-wall&quot;},{&quot;name&quot;:&quot;Private Sanctum&quot;,&quot;index&quot;:&quot;private-sanctum&quot;,&quot;url&quot;:&quot;\/api\/spells\/private-sanctum&quot;},{&quot;name&quot;:&quot;Produce Flame&quot;,&quot;index&quot;:&quot;produce-flame&quot;,&quot;url&quot;:&quot;\/api\/spells\/produce-flame&quot;},{&quot;name&quot;:&quot;Programmed Illusion&quot;,&quot;index&quot;:&quot;programmed-illusion&quot;,&quot;url&quot;:&quot;\/api\/spells\/programmed-illusion&quot;},{&quot;name&quot;:&quot;Project Image&quot;,&quot;index&quot;:&quot;project-image&quot;,&quot;url&quot;:&quot;\/api\/spells\/project-image&quot;},{&quot;name&quot;:&quot;Protection From Energy&quot;,&quot;index&quot;:&quot;protection-from-energy&quot;,&quot;url&quot;:&quot;\/api\/spells\/protection-from-energy&quot;},{&quot;name&quot;:&quot;Protection from Evil and Good&quot;,&quot;index&quot;:&quot;protection-from-evil-and-good&quot;,&quot;url&quot;:&quot;\/api\/spells\/protection-from-evil-and-good&quot;},{&quot;name&quot;:&quot;Protection from Poison&quot;,&quot;index&quot;:&quot;protection-from-poison&quot;,&quot;url&quot;:&quot;\/api\/spells\/protection-from-poison&quot;},{&quot;name&quot;:&quot;Purify Food and Drink&quot;,&quot;index&quot;:&quot;purify-food-and-drink&quot;,&quot;url&quot;:&quot;\/api\/spells\/purify-food-and-drink&quot;},{&quot;name&quot;:&quot;Raise Dead&quot;,&quot;index&quot;:&quot;raise-dead&quot;,&quot;url&quot;:&quot;\/api\/spells\/raise-dead&quot;},{&quot;name&quot;:&quot;Ray of Enfeeblement&quot;,&quot;index&quot;:&quot;ray-of-enfeeblement&quot;,&quot;url&quot;:&quot;\/api\/spells\/ray-of-enfeeblement&quot;},{&quot;name&quot;:&quot;Ray of Frost&quot;,&quot;index&quot;:&quot;ray-of-frost&quot;,&quot;url&quot;:&quot;\/api\/spells\/ray-of-frost&quot;},{&quot;name&quot;:&quot;Regenerate&quot;,&quot;index&quot;:&quot;regenerate&quot;,&quot;url&quot;:&quot;\/api\/spells\/regenerate&quot;},{&quot;name&quot;:&quot;Reincarnate&quot;,&quot;index&quot;:&quot;reincarnate&quot;,&quot;url&quot;:&quot;\/api\/spells\/reincarnate&quot;},{&quot;name&quot;:&quot;Remove Curse&quot;,&quot;index&quot;:&quot;remove-curse&quot;,&quot;url&quot;:&quot;\/api\/spells\/remove-curse&quot;},{&quot;name&quot;:&quot;Resilient Sphere&quot;,&quot;index&quot;:&quot;resilient-sphere&quot;,&quot;url&quot;:&quot;\/api\/spells\/resilient-sphere&quot;},{&quot;name&quot;:&quot;Resistance&quot;,&quot;index&quot;:&quot;resistance&quot;,&quot;url&quot;:&quot;\/api\/spells\/resistance&quot;},{&quot;name&quot;:&quot;Resurrection&quot;,&quot;index&quot;:&quot;resurrection&quot;,&quot;url&quot;:&quot;\/api\/spells\/resurrection&quot;},{&quot;name&quot;:&quot;Reverse Gravity&quot;,&quot;index&quot;:&quot;reverse-gravity&quot;,&quot;url&quot;:&quot;\/api\/spells\/reverse-gravity&quot;},{&quot;name&quot;:&quot;Revivify&quot;,&quot;index&quot;:&quot;revivify&quot;,&quot;url&quot;:&quot;\/api\/spells\/revivify&quot;},{&quot;name&quot;:&quot;Rope Trick&quot;,&quot;index&quot;:&quot;rope-trick&quot;,&quot;url&quot;:&quot;\/api\/spells\/rope-trick&quot;},{&quot;name&quot;:&quot;Sacred Flame&quot;,&quot;index&quot;:&quot;sacred-flame&quot;,&quot;url&quot;:&quot;\/api\/spells\/sacred-flame&quot;},{&quot;name&quot;:&quot;Sanctuary&quot;,&quot;index&quot;:&quot;sanctuary&quot;,&quot;url&quot;:&quot;\/api\/spells\/sanctuary&quot;},{&quot;name&quot;:&quot;Scorching Ray&quot;,&quot;index&quot;:&quot;scorching-ray&quot;,&quot;url&quot;:&quot;\/api\/spells\/scorching-ray&quot;},{&quot;name&quot;:&quot;Scrying&quot;,&quot;index&quot;:&quot;scrying&quot;,&quot;url&quot;:&quot;\/api\/spells\/scrying&quot;},{&quot;name&quot;:&quot;Secret Chest&quot;,&quot;index&quot;:&quot;secret-chest&quot;,&quot;url&quot;:&quot;\/api\/spells\/secret-chest&quot;},{&quot;name&quot;:&quot;See Invisibility&quot;,&quot;index&quot;:&quot;see-invisibility&quot;,&quot;url&quot;:&quot;\/api\/spells\/see-invisibility&quot;},{&quot;name&quot;:&quot;Seeming&quot;,&quot;index&quot;:&quot;seeming&quot;,&quot;url&quot;:&quot;\/api\/spells\/seeming&quot;},{&quot;name&quot;:&quot;Sending&quot;,&quot;index&quot;:&quot;sending&quot;,&quot;url&quot;:&quot;\/api\/spells\/sending&quot;},{&quot;name&quot;:&quot;Sequester&quot;,&quot;index&quot;:&quot;sequester&quot;,&quot;url&quot;:&quot;\/api\/spells\/sequester&quot;},{&quot;name&quot;:&quot;Shapechange&quot;,&quot;index&quot;:&quot;shapechange&quot;,&quot;url&quot;:&quot;\/api\/spells\/shapechange&quot;},{&quot;name&quot;:&quot;Shatter&quot;,&quot;index&quot;:&quot;shatter&quot;,&quot;url&quot;:&quot;\/api\/spells\/shatter&quot;},{&quot;name&quot;:&quot;Shield&quot;,&quot;index&quot;:&quot;shield&quot;,&quot;url&quot;:&quot;\/api\/spells\/shield&quot;},{&quot;name&quot;:&quot;Shield of Faith&quot;,&quot;index&quot;:&quot;shield-of-faith&quot;,&quot;url&quot;:&quot;\/api\/spells\/shield-of-faith&quot;},{&quot;name&quot;:&quot;Shillelagh&quot;,&quot;index&quot;:&quot;shillelagh&quot;,&quot;url&quot;:&quot;\/api\/spells\/shillelagh&quot;},{&quot;name&quot;:&quot;Shocking Grasp&quot;,&quot;index&quot;:&quot;shocking-grasp&quot;,&quot;url&quot;:&quot;\/api\/spells\/shocking-grasp&quot;},{&quot;name&quot;:&quot;Silence&quot;,&quot;index&quot;:&quot;silence&quot;,&quot;url&quot;:&quot;\/api\/spells\/silence&quot;},{&quot;name&quot;:&quot;Silent Image&quot;,&quot;index&quot;:&quot;silent-image&quot;,&quot;url&quot;:&quot;\/api\/spells\/silent-image&quot;},{&quot;name&quot;:&quot;Simulacrum&quot;,&quot;index&quot;:&quot;simulacrum&quot;,&quot;url&quot;:&quot;\/api\/spells\/simulacrum&quot;},{&quot;name&quot;:&quot;Sleep&quot;,&quot;index&quot;:&quot;sleep&quot;,&quot;url&quot;:&quot;\/api\/spells\/sleep&quot;},{&quot;name&quot;:&quot;Sleet Storm&quot;,&quot;index&quot;:&quot;sleet-storm&quot;,&quot;url&quot;:&quot;\/api\/spells\/sleet-storm&quot;},{&quot;name&quot;:&quot;Slow&quot;,&quot;index&quot;:&quot;slow&quot;,&quot;url&quot;:&quot;\/api\/spells\/slow&quot;},{&quot;name&quot;:&quot;Spare the Dying&quot;,&quot;index&quot;:&quot;spare-the-dying&quot;,&quot;url&quot;:&quot;\/api\/spells\/spare-the-dying&quot;},{&quot;name&quot;:&quot;Speak with Animals&quot;,&quot;index&quot;:&quot;speak-with-animals&quot;,&quot;url&quot;:&quot;\/api\/spells\/speak-with-animals&quot;},{&quot;name&quot;:&quot;Speak with Dead&quot;,&quot;index&quot;:&quot;speak-with-dead&quot;,&quot;url&quot;:&quot;\/api\/spells\/speak-with-dead&quot;},{&quot;name&quot;:&quot;Speak with Plants&quot;,&quot;index&quot;:&quot;speak-with-plants&quot;,&quot;url&quot;:&quot;\/api\/spells\/speak-with-plants&quot;},{&quot;name&quot;:&quot;Spider Climb&quot;,&quot;index&quot;:&quot;spider-climb&quot;,&quot;url&quot;:&quot;\/api\/spells\/spider-climb&quot;},{&quot;name&quot;:&quot;Spike Growth&quot;,&quot;index&quot;:&quot;spike-growth&quot;,&quot;url&quot;:&quot;\/api\/spells\/spike-growth&quot;},{&quot;name&quot;:&quot;Spirit Guardians&quot;,&quot;index&quot;:&quot;spirit-guardians&quot;,&quot;url&quot;:&quot;\/api\/spells\/spirit-guardians&quot;},{&quot;name&quot;:&quot;Spiritual Weapon&quot;,&quot;index&quot;:&quot;spiritual-weapon&quot;,&quot;url&quot;:&quot;\/api\/spells\/spiritual-weapon&quot;},{&quot;name&quot;:&quot;Stinking Cloud&quot;,&quot;index&quot;:&quot;stinking-cloud&quot;,&quot;url&quot;:&quot;\/api\/spells\/stinking-cloud&quot;},{&quot;name&quot;:&quot;Stone Shape&quot;,&quot;index&quot;:&quot;stone-shape&quot;,&quot;url&quot;:&quot;\/api\/spells\/stone-shape&quot;},{&quot;name&quot;:&quot;Stoneskin&quot;,&quot;index&quot;:&quot;stoneskin&quot;,&quot;url&quot;:&quot;\/api\/spells\/stoneskin&quot;},{&quot;name&quot;:&quot;Storm of Vengeance&quot;,&quot;index&quot;:&quot;storm-of-vengeance&quot;,&quot;url&quot;:&quot;\/api\/spells\/storm-of-vengeance&quot;},{&quot;name&quot;:&quot;Suggestion&quot;,&quot;index&quot;:&quot;suggestion&quot;,&quot;url&quot;:&quot;\/api\/spells\/suggestion&quot;},{&quot;name&quot;:&quot;Sunbeam&quot;,&quot;index&quot;:&quot;sunbeam&quot;,&quot;url&quot;:&quot;\/api\/spells\/sunbeam&quot;},{&quot;name&quot;:&quot;Sunburst&quot;,&quot;index&quot;:&quot;sunburst&quot;,&quot;url&quot;:&quot;\/api\/spells\/sunburst&quot;},{&quot;name&quot;:&quot;Symbol&quot;,&quot;index&quot;:&quot;symbol&quot;,&quot;url&quot;:&quot;\/api\/spells\/symbol&quot;},{&quot;name&quot;:&quot;Telekinesis&quot;,&quot;index&quot;:&quot;telekinesis&quot;,&quot;url&quot;:&quot;\/api\/spells\/telekinesis&quot;},{&quot;name&quot;:&quot;Telepathic Bond&quot;,&quot;index&quot;:&quot;telepathic-bond&quot;,&quot;url&quot;:&quot;\/api\/spells\/telepathic-bond&quot;},{&quot;name&quot;:&quot;Teleport&quot;,&quot;index&quot;:&quot;teleport&quot;,&quot;url&quot;:&quot;\/api\/spells\/teleport&quot;},{&quot;name&quot;:&quot;Teleportation Circle&quot;,&quot;index&quot;:&quot;teleportation-circle&quot;,&quot;url&quot;:&quot;\/api\/spells\/teleportation-circle&quot;},{&quot;name&quot;:&quot;Thaumaturgy&quot;,&quot;index&quot;:&quot;thaumaturgy&quot;,&quot;url&quot;:&quot;\/api\/spells\/thaumaturgy&quot;},{&quot;name&quot;:&quot;Thunderwave&quot;,&quot;index&quot;:&quot;thunderwave&quot;,&quot;url&quot;:&quot;\/api\/spells\/thunderwave&quot;},{&quot;name&quot;:&quot;Time Stop&quot;,&quot;index&quot;:&quot;time-stop&quot;,&quot;url&quot;:&quot;\/api\/spells\/time-stop&quot;},{&quot;name&quot;:&quot;Tiny Hut&quot;,&quot;index&quot;:&quot;tiny-hut&quot;,&quot;url&quot;:&quot;\/api\/spells\/tiny-hut&quot;},{&quot;name&quot;:&quot;Tongues&quot;,&quot;index&quot;:&quot;tongues&quot;,&quot;url&quot;:&quot;\/api\/spells\/tongues&quot;},{&quot;name&quot;:&quot;Transport via Plants&quot;,&quot;index&quot;:&quot;transport-via-plants&quot;,&quot;url&quot;:&quot;\/api\/spells\/transport-via-plants&quot;},{&quot;name&quot;:&quot;Tree Stride&quot;,&quot;index&quot;:&quot;tree-stride&quot;,&quot;url&quot;:&quot;\/api\/spells\/tree-stride&quot;},{&quot;name&quot;:&quot;True Polymorph&quot;,&quot;index&quot;:&quot;true-polymorph&quot;,&quot;url&quot;:&quot;\/api\/spells\/true-polymorph&quot;},{&quot;name&quot;:&quot;True Resurrection&quot;,&quot;index&quot;:&quot;true-resurrection&quot;,&quot;url&quot;:&quot;\/api\/spells\/true-resurrection&quot;},{&quot;name&quot;:&quot;True Seeing&quot;,&quot;index&quot;:&quot;true-seeing&quot;,&quot;url&quot;:&quot;\/api\/spells\/true-seeing&quot;},{&quot;name&quot;:&quot;True Strike&quot;,&quot;index&quot;:&quot;true-strike&quot;,&quot;url&quot;:&quot;\/api\/spells\/true-strike&quot;},{&quot;name&quot;:&quot;Unseen Servant&quot;,&quot;index&quot;:&quot;unseen-servant&quot;,&quot;url&quot;:&quot;\/api\/spells\/unseen-servant&quot;},{&quot;name&quot;:&quot;Vampiric Touch&quot;,&quot;index&quot;:&quot;vampiric-touch&quot;,&quot;url&quot;:&quot;\/api\/spells\/vampiric-touch&quot;},{&quot;name&quot;:&quot;Vicious Mockery&quot;,&quot;index&quot;:&quot;vicious-mockery&quot;,&quot;url&quot;:&quot;\/api\/spells\/vicious-mockery&quot;},{&quot;name&quot;:&quot;Wall of Fire&quot;,&quot;index&quot;:&quot;wall-of-fire&quot;,&quot;url&quot;:&quot;\/api\/spells\/wall-of-fire&quot;},{&quot;name&quot;:&quot;Wall of Force&quot;,&quot;index&quot;:&quot;wall-of-force&quot;,&quot;url&quot;:&quot;\/api\/spells\/wall-of-force&quot;},{&quot;name&quot;:&quot;Wall of Ice&quot;,&quot;index&quot;:&quot;wall-of-ice&quot;,&quot;url&quot;:&quot;\/api\/spells\/wall-of-ice&quot;},{&quot;name&quot;:&quot;Wall of Stone&quot;,&quot;index&quot;:&quot;wall-of-stone&quot;,&quot;url&quot;:&quot;\/api\/spells\/wall-of-stone&quot;},{&quot;name&quot;:&quot;Wall of Thorns&quot;,&quot;index&quot;:&quot;wall-of-thorns&quot;,&quot;url&quot;:&quot;\/api\/spells\/wall-of-thorns&quot;},{&quot;name&quot;:&quot;Warding Bond&quot;,&quot;index&quot;:&quot;warding-bond&quot;,&quot;url&quot;:&quot;\/api\/spells\/warding-bond&quot;},{&quot;name&quot;:&quot;Water Breathing&quot;,&quot;index&quot;:&quot;water-breathing&quot;,&quot;url&quot;:&quot;\/api\/spells\/water-breathing&quot;},{&quot;name&quot;:&quot;Water Walk&quot;,&quot;index&quot;:&quot;water-walk&quot;,&quot;url&quot;:&quot;\/api\/spells\/water-walk&quot;},{&quot;name&quot;:&quot;Web&quot;,&quot;index&quot;:&quot;web&quot;,&quot;url&quot;:&quot;\/api\/spells\/web&quot;},{&quot;name&quot;:&quot;Weird&quot;,&quot;index&quot;:&quot;weird&quot;,&quot;url&quot;:&quot;\/api\/spells\/weird&quot;},{&quot;name&quot;:&quot;Wind Walk&quot;,&quot;index&quot;:&quot;wind-walk&quot;,&quot;url&quot;:&quot;\/api\/spells\/wind-walk&quot;},{&quot;name&quot;:&quot;Wind Wall&quot;,&quot;index&quot;:&quot;wind-wall&quot;,&quot;url&quot;:&quot;\/api\/spells\/wind-wall&quot;},{&quot;name&quot;:&quot;Wish&quot;,&quot;index&quot;:&quot;wish&quot;,&quot;url&quot;:&quot;\/api\/spells\/wish&quot;},{&quot;name&quot;:&quot;Word of Recall&quot;,&quot;index&quot;:&quot;word-of-recall&quot;,&quot;url&quot;:&quot;\/api\/spells\/word-of-recall&quot;},{&quot;name&quot;:&quot;Zone of Truth&quot;,&quot;index&quot;:&quot;zone-of-truth&quot;,&quot;url&quot;:&quot;\/api\/spells\/zone-of-truth&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.count == 319</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">Testando retorno 200 para classes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>413</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://www.dnd5eapi.co/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:09.465 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/classes&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">412</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">22:37:09.466 request:
+1 &gt; GET https://www.dnd5eapi.co/api/classes
+1 &gt; Host: www.dnd5eapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:09.876 response time in milliseconds: 409
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701740229&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=%2BWvg7WApKGvG932QJjzDZXnJJC%2BK1kDpv8TXmX1TWF4%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701740229&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=%2BWvg7WApKGvG932QJjzDZXnJJC%2BK1kDpv8TXmX1TWF4%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Ratelimit-Limit: 10000
+1 &lt; X-Ratelimit-Remaining: 9999
+1 &lt; Date: Tue, 05 Dec 2023 01:37:09 GMT
+1 &lt; X-Ratelimit-Reset: 1701740231
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 786
+1 &lt; Etag: W/&quot;312-H9dJD88WfGg48gPI3odClJSmkKU&quot;
+1 &lt; Via: 1.1 vegur
+{&quot;count&quot;:12,&quot;results&quot;:[{&quot;name&quot;:&quot;Barbarian&quot;,&quot;index&quot;:&quot;barbarian&quot;,&quot;url&quot;:&quot;\/api\/classes\/barbarian&quot;},{&quot;name&quot;:&quot;Bard&quot;,&quot;index&quot;:&quot;bard&quot;,&quot;url&quot;:&quot;\/api\/classes\/bard&quot;},{&quot;name&quot;:&quot;Cleric&quot;,&quot;index&quot;:&quot;cleric&quot;,&quot;url&quot;:&quot;\/api\/classes\/cleric&quot;},{&quot;name&quot;:&quot;Druid&quot;,&quot;index&quot;:&quot;druid&quot;,&quot;url&quot;:&quot;\/api\/classes\/druid&quot;},{&quot;name&quot;:&quot;Fighter&quot;,&quot;index&quot;:&quot;fighter&quot;,&quot;url&quot;:&quot;\/api\/classes\/fighter&quot;},{&quot;name&quot;:&quot;Monk&quot;,&quot;index&quot;:&quot;monk&quot;,&quot;url&quot;:&quot;\/api\/classes\/monk&quot;},{&quot;name&quot;:&quot;Paladin&quot;,&quot;index&quot;:&quot;paladin&quot;,&quot;url&quot;:&quot;\/api\/classes\/paladin&quot;},{&quot;name&quot;:&quot;Ranger&quot;,&quot;index&quot;:&quot;ranger&quot;,&quot;url&quot;:&quot;\/api\/classes\/ranger&quot;},{&quot;name&quot;:&quot;Rogue&quot;,&quot;index&quot;:&quot;rogue&quot;,&quot;url&quot;:&quot;\/api\/classes\/rogue&quot;},{&quot;name&quot;:&quot;Sorcerer&quot;,&quot;index&quot;:&quot;sorcerer&quot;,&quot;url&quot;:&quot;\/api\/classes\/sorcerer&quot;},{&quot;name&quot;:&quot;Warlock&quot;,&quot;index&quot;:&quot;warlock&quot;,&quot;url&quot;:&quot;\/api\/classes\/warlock&quot;},{&quot;name&quot;:&quot;Wizard&quot;,&quot;index&quot;:&quot;wizard&quot;,&quot;url&quot;:&quot;\/api\/classes\/wizard&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.count == 12</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:20]</span>
+                <span class="scenario-name">Testando retorno 200 para raças</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>439</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://www.dnd5eapi.co/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:09.883 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/races&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">438</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">22:37:09.885 request:
+1 &gt; GET https://www.dnd5eapi.co/api/races
+1 &gt; Host: www.dnd5eapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:10.320 response time in milliseconds: 435
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701740230&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=aqccjd7cmaA%2FkA9HUtQFn4ggDWPT9KjhwhWjxyHQZXs%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701740230&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=aqccjd7cmaA%2FkA9HUtQFn4ggDWPT9KjhwhWjxyHQZXs%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Ratelimit-Limit: 10000
+1 &lt; X-Ratelimit-Remaining: 9999
+1 &lt; Date: Tue, 05 Dec 2023 01:37:10 GMT
+1 &lt; X-Ratelimit-Reset: 1701740232
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 590
+1 &lt; Etag: W/&quot;24e-fLi04AT1A69TbfAKoLPP6Ek4DzE&quot;
+1 &lt; Via: 1.1 vegur
+{&quot;count&quot;:9,&quot;results&quot;:[{&quot;name&quot;:&quot;Dragonborn&quot;,&quot;index&quot;:&quot;dragonborn&quot;,&quot;url&quot;:&quot;\/api\/races\/dragonborn&quot;},{&quot;name&quot;:&quot;Dwarf&quot;,&quot;index&quot;:&quot;dwarf&quot;,&quot;url&quot;:&quot;\/api\/races\/dwarf&quot;},{&quot;name&quot;:&quot;Elf&quot;,&quot;index&quot;:&quot;elf&quot;,&quot;url&quot;:&quot;\/api\/races\/elf&quot;},{&quot;name&quot;:&quot;Gnome&quot;,&quot;index&quot;:&quot;gnome&quot;,&quot;url&quot;:&quot;\/api\/races\/gnome&quot;},{&quot;name&quot;:&quot;Half-Elf&quot;,&quot;index&quot;:&quot;half-elf&quot;,&quot;url&quot;:&quot;\/api\/races\/half-elf&quot;},{&quot;name&quot;:&quot;Half-Orc&quot;,&quot;index&quot;:&quot;half-orc&quot;,&quot;url&quot;:&quot;\/api\/races\/half-orc&quot;},{&quot;name&quot;:&quot;Halfling&quot;,&quot;index&quot;:&quot;halfling&quot;,&quot;url&quot;:&quot;\/api\/races\/halfling&quot;},{&quot;name&quot;:&quot;Human&quot;,&quot;index&quot;:&quot;human&quot;,&quot;url&quot;:&quot;\/api\/races\/human&quot;},{&quot;name&quot;:&quot;Tiefling&quot;,&quot;index&quot;:&quot;tiefling&quot;,&quot;url&quot;:&quot;\/api\/races\/tiefling&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.count == 9</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:27]</span>
+                <span class="scenario-name">Testando retorno 404 para classe inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>510</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://www.dnd5eapi.co/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:10.327 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/classes/demon&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">509</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">22:37:10.328 request:
+1 &gt; GET https://www.dnd5eapi.co/api/classes/demon
+1 &gt; Host: www.dnd5eapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:10.836 response time in milliseconds: 507
+1 &lt; 404
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701740230&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=aqccjd7cmaA%2FkA9HUtQFn4ggDWPT9KjhwhWjxyHQZXs%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701740230&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=aqccjd7cmaA%2FkA9HUtQFn4ggDWPT9KjhwhWjxyHQZXs%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Ratelimit-Limit: 10000
+1 &lt; X-Ratelimit-Remaining: 9999
+1 &lt; Date: Tue, 05 Dec 2023 01:37:10 GMT
+1 &lt; X-Ratelimit-Reset: 1701740232
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 21
+1 &lt; Etag: W/&quot;15-bm7tJgu8FHlq5QU+Y6gDxOGPfRc&quot;
+1 &lt; Via: 1.1 vegur
+{&quot;error&quot;:&quot;Not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:33]</span>
+                <span class="scenario-name">Testando retorno 404 para raça inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>465</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://www.dnd5eapi.co/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:10.847 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/races/pandarian&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">464</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">22:37:10.851 request:
+1 &gt; GET https://www.dnd5eapi.co/api/races/pandarian
+1 &gt; Host: www.dnd5eapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:11.312 response time in milliseconds: 460
+1 &lt; 404
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701740231&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=De89jYc6buRu87iGusNt3kK16Jb24JuvXrcRabXVaIk%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701740231&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=De89jYc6buRu87iGusNt3kK16Jb24JuvXrcRabXVaIk%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Ratelimit-Limit: 10000
+1 &lt; X-Ratelimit-Remaining: 9999
+1 &lt; Date: Tue, 05 Dec 2023 01:37:11 GMT
+1 &lt; X-Ratelimit-Reset: 1701740233
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 21
+1 &lt; Etag: W/&quot;15-bm7tJgu8FHlq5QU+Y6gDxOGPfRc&quot;
+1 &lt; Via: 1.1 vegur
+{&quot;error&quot;:&quot;Not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:39]</span>
+                <span class="scenario-name">Testando retorno 404 para spell inexistente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>639</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://www.dnd5eapi.co/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:11.323 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/spells/abracadabra&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">637</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">22:37:11.330 request:
+1 &gt; GET https://www.dnd5eapi.co/api/spells/abracadabra
+1 &gt; Host: www.dnd5eapi.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:11.962 response time in milliseconds: 631
+1 &lt; 404
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701740231&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=De89jYc6buRu87iGusNt3kK16Jb24JuvXrcRabXVaIk%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701740231&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=De89jYc6buRu87iGusNt3kK16Jb24JuvXrcRabXVaIk%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Ratelimit-Limit: 10000
+1 &lt; X-Ratelimit-Remaining: 9999
+1 &lt; Date: Tue, 05 Dec 2023 01:37:11 GMT
+1 &lt; X-Ratelimit-Reset: 1701740233
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 21
+1 &lt; Etag: W/&quot;15-bm7tJgu8FHlq5QU+Y6gDxOGPfRc&quot;
+1 &lt; Via: 1.1 vegur
+{&quot;error&quot;:&quot;Not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
